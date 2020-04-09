@@ -1,0 +1,860 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+header {
+    background-color: #29a6dc;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+header .welcome {
+    z-index: 1;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    right: 5%;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+
+}
+
+header p {
+
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+
+
+}
+
+header h1 {
+    margin-top: 15px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+header h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 20;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+header button {
+    display: block;
+    margin: 0 auto;
+    line-height: 32px;
+    padding: 0 20px;
+    margin-top: 15px;
+    color: white;
+    font-size: 12px;
+    font-family: 'saira', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+@media (orientation:portrait) and (min-width:360px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header button {
+        margin-top: 27px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (orientation:portrait) and (min-width:411px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 32px;
+    }
+
+    header button {
+        margin-top: 27px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 48px;
+    }
+
+    header img {
+        right: -5%;
+    }
+
+}
+
+@media (orientation:portrait) and (min-width:768px) {
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 48px;
+    }
+
+    header button {
+        font-size: 32px;
+        line-height: 80px;
+    }
+
+    header img {
+        height: 50%;
+        right: 0;
+    }
+
+}
+
+@media(orientation:landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+
+    header .welcome {
+        position: absolute;
+        top: 11%;
+        left: 5%;
+        right: 44%;
+    }
+
+    header button {
+        margin-top: 36px;
+    }
+}
+
+@media (orientation:landscape) and (min-width:640px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+}
+
+@media (orientation:landscape) and (min-width:768px) {
+    header p {
+        margin-top: -10px;
+        font-size: 3em;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 32px;
+    }
+
+    header button {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+
+    header img {
+
+        height: 90%;
+
+    }
+
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+    header p {
+        font-size: 56px;
+    }
+
+    header h1 {
+        margin-top: 5%;
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    header button {
+        margin-top: 40px;
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+
+    header img {
+
+        height: 95%;
+        right: -18%;
+    }
+}
+
+@media (orientation:landscape) and (min-width:1280px) {
+    header .welcome {
+        text-align: left;
+    }
+
+    header p {
+        font-size: 72px;
+    }
+
+    header h1 {
+        margin-top: 5%;
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    header button {
+        margin-top: 40px;
+        font-size: 32px;
+        line-height: 90px;
+        padding: 0 70px;
+
+        margin-left: 0;
+    }
+
+
+    header img {
+
+        height: 95%;
+        right: -3%;
+
+    }
+}
+
+@media (min-width:1024px) {
+    header button:hover {
+        background-color: white;
+        color: #111;
+        cursor: pointer;
+    }
+}
+
+/* sekcja1 features  */
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    clear: both;
+
+}
+
+.feature img {
+    width: 100%;
+    max-width: 375px;
+    display: block;
+    padding: 0 5%;
+
+    margin: 0 auto;
+}
+
+.feature h2 {
+    padding: 3% 8.5%;
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.feature p {
+    font-family: saira, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 5%;
+}
+
+
+
+@media (orientation:portrait) and (min-width:360px) {
+    .feature p {
+        font-size: 16px;
+    }
+}
+
+@media (orientation:portrait) and (min-width:768px) {
+    .feature p {
+        font-size: 20px;
+
+    }
+
+    .feature h2 {
+        font-size: 28px;
+    }
+
+    .features h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (orientation:landscape) and (min-width:640px) {
+    .feature p {
+        font-size: 16px;
+
+    }
+
+    .feature h2 {
+        font-size: 22px;
+    }
+
+    .features h1 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1024px) {
+    .features {
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 0 30px;
+
+    }
+
+
+    .feature {
+        overflow: hidden;
+        float: left;
+        display: block;
+        width: 33%;
+        margin: 0 auto;
+
+    }
+
+    .feature h2 {
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 29px;
+        margin-bottom: 15px;
+    }
+
+    .features h1 {
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    .feature p {
+        font-family: saira, sans-serif;
+        font-weight: light;
+        font-size: 21px;
+
+    }
+}
+
+/* 
+
+sekcja2 */
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    font-size: 28px;
+    font-family: 'Saira Condensed',
+        sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: 'Saira',
+        sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project {
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #29a6dc;
+}
+
+@media (min-width:768px) {
+
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (orientation: landscape) {
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+
+    }
+
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 40px;
+    }
+
+
+}
+
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 50px;
+        font-size: 28px;
+        text-indent: 40px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+        line-height: 180%;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+}
+
+/* 
+skecja slogan  */
+
+.slogan {
+    background-attachment: fixed;
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+}
+
+
+
+
+;
+
+.slogan .bg h1.h1 {
+
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+
+    text-transform: uppercase;
+    margin-bottom: 200px;
+
+
+}
+
+.slogan .tekst {
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 30px 10px;
+
+
+
+}
+
+.slogan .autor {
+
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.slogan .bg {
+
+    background-color: rgb(0, 63, 114, 0.5);
+    padding: 80px 10px;
+}
+
+@media (orientation:landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.slogan .bg h1 {
+    font-size: 52px;
+    ;
+}
+
+.slogan .tekst {
+    font-size: 32px;
+}
+
+.slogan .autor {
+    font-size: 22px;
+}
+
+/* 
+sekcja hobby */
+.hobby {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hobby h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 10px;
+
+
+}
+
+.hobby .item {
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+.hobby .item p {
+    font-family: "saira", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@media (orientation:landscape) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+
+    }
+
+}
+
+
+
+@media (min-width:768px) {
+    .hobby h1 {
+        font-size: 44px
+    }
+
+    .hobby .item p {
+        font-size: 32px;
+        padding: 10px 10px;
+    }
+}
+
+@media (min-width:1024px) {
+    .hobby h1 {
+        font-size: 44px
+    }
+
+    .hobby .item p {
+        font-size: 32px;
+        padding: 0;
+        text-align: center;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 0.3s;
+        cursor: default;
+    }
+}
+
+.hobby .item:hover p {
+    opacity: 1;
+}
+
+
+.hobby .item {
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.hobby .item:hover {
+    background-size: 130%;
+}
+
+/* sekcja kontakt */
+
+section.kontakt {
+    background-color: black;
+    color: white;
+
+}
+
+.kontakt h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+
+}
+
+
+
+.kontakt input,
+.kontakt button,
+.kontakt textarea {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+    font-family: saira, sans-serif;
+    padding: 5%;
+
+
+}
+
+.kontakt input {
+    height: 36px;
+}
+
+.kontakt textarea {
+    height: 120px;
+}
+
+.kontakt button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+    transition: 0.3s;
+}
+
+.kontakt .wrap {
+    padding-top: 20px;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+
+.kontakt .socials {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+    padding-bottom: 20px;
+}
+
+.kontakt .social {
+    padding: 10px 0;
+}
+
+.kontakt .social img {
+    float: left;
+    padding-left: 10%;
+}
+
+.kontakt .social span {
+
+    line-height: 72px;
+    padding-left: 40px;
+}
+
+@media (min-width:533px) {
+    .kontakt .socials {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:768px) {
+    .kontakt h1 {
+        font-size: 44px;
+        padding-top: 20px;
+    }
+
+    .kontakt button {
+        font-size: 26px;
+    }
+
+    .kontakt .socials {
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1024px) {
+    .kontakt .wrap form {
+        padding-top: 40px;
+        width: 50%;
+        float: left;
+    }
+
+    .kontakt .socials {
+        float: left;
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    .kontakt .wrap input {
+        font-size: 20px;
+    }
+
+    .kontakt .wrap textarea {
+        font-size: 20px;
+    }
+
+    .kontakt h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+
+    .kontakt button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+footer {
+    background-color: #29a6dc;
+    font-family: saira, sans-serif;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
